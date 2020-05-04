@@ -1,0 +1,172 @@
+.page {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.item {
+  list-style: none; }
+
+.link {
+  text-decoration: none;
+  color: #000000; }
+
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 79px;
+  border-bottom: 1px solid #ececec; }
+
+.header__logo {
+  width: 90px;
+  height: 40px;
+  background-image: url(../images/mishka-logo-mobile.png);
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.header__nav {
+  position: relative;
+  display: none;
+  width: 100%; }
+
+.header__nav_active {
+  display: flex; }
+
+.main-nav__list {
+  width: 100%; }
+
+.main-nav__item {
+  border-bottom: 1px solid #ececec; }
+
+.main-nav__text {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 185px; }
+
+.main-nav__link {
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 27px 0; }
+
+.main-nav__text_search::before,
+.main-nav__text_cart::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 18px;
+  left: -50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.2; }
+
+.main-nav__text_search::before {
+  background-image: url(../images/search-icon.svg); }
+
+.main-nav__text_cart::before {
+  background-image: url(../images/cart-icon.svg); }
+
+.header__button-menu {
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  height: 14px;
+  background-color: transparent;
+  border: none; }
+
+.header__button-menu_on {
+  display: block; }
+
+.header__button-close {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: none; }
+
+.header__button-close_on {
+  display: block; }
+
+.header__button-close::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 27px;
+  height: 2px;
+  right: -5px;
+  top: 50%;
+  margin-top: -1px;
+  background-color: #000000;
+  transform: rotate(45deg); }
+
+.header__button-close::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 27px;
+  height: 2px;
+  right: -5px;
+  top: 50%;
+  margin-top: -1px;
+  background-color: #000000;
+  transform: rotate(-45deg); }
+
+@media (min-width: 768px) {
+  .header__logo {
+    width: 115px;
+    height: 50px;
+    background-image: url(../images/mishka-logo-tablet.svg);
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .header__button-menu,
+  .header__button-close {
+    display: none; }
+  .header__nav {
+    display: flex; }
+  .page-header {
+    flex-direction: row; }
+  .header__logo-container {
+    position: absolute;
+    width: auto;
+    height: 88px;
+    border-bottom: none;
+    left: 50px; }
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .main-nav__link {
+    padding: 32px 0; }
+  .main-nav__item_catalog {
+    order: 3; }
+  .main-nav__item_knitting {
+    order: 4; }
+  .main-nav__item_search {
+    border: 1px solid #ececec;
+    width: 85px;
+    margin-left: auto;
+    order: 1; }
+  .main-nav__item_cart {
+    order: 2; }
+  .main-nav__link_null-font {
+    font-size: 0px; } }
