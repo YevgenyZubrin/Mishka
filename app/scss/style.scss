@@ -194,6 +194,41 @@
     display: none;
 }
 
+.main-features {
+    
+}
+
+.main-features__title {
+    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
+    margin-top: 70px;
+    margin-bottom: 115px;
+    margin-right: 38px;
+    margin-left: 38px;
+}
+
+.main-features__button {
+    display: flex;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 700;
+    height: 103px;
+}
+
+.main-features__button {
+    background-color: #63d1bb;
+}
+
+.main-features__button_dark {
+    background-color: #56c3b2;
+}
+
+.features-button__text {
+    width: 50px;
+    margin: 30px 30px;
+}
+
 @media (min-width: 768px) {
     .header__logo-container {
         position: absolute;
