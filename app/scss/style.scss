@@ -44,6 +44,14 @@
     background-repeat: no-repeat;
 }
 
+.header__logo:hover {
+    opacity: 0.5;
+}
+
+.header__logo:active {
+    opacity: 0.3;
+}
+
 .header__nav {
     position: relative;
     display: none;
@@ -79,13 +87,21 @@
     padding: 27px 0;
 }
 
+.main-nav__link:hover {
+    color: #666666;
+}
+
+.main-nav__link:active {
+    color: #b2b2b2;
+}
+
 .main-nav__text_search::before,
 .main-nav__text_cart::before {
     content: "";
     position: absolute;
     display: block;
     width: 22px;
-    height: 18px;
+    height: 22px;
     left: -50px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -97,6 +113,22 @@
 
 .main-nav__text_cart::before {
     background-image: url(../images/cart-icon.svg);
+}
+
+.main-nav__text_search:hover::before {
+    background-image: url(../images/search-icon-hover.svg);
+}
+
+.main-nav__text_cart:hover::before {
+    background-image: url(../images/cart-icon-hover.svg);
+}
+
+.main-nav__text_search:active::before {
+    background-image: url(../images/search-icon-active.svg);
+}
+
+.main-nav__text_cart:active::before {
+    background-image: url(../images/cart-icon-active.svg);
 }
 
 .header__button-menu {
@@ -267,6 +299,14 @@
         order: 1;
     }
 
+    .main-nav__item_search:hover {
+        background-image: url(../images/search-icon-hover.svg);
+    }
+
+    .main-nav__item_search:active {
+        background-image: url(../images/search-icon-active.svg);
+    }
+
     .main-nav__text_cart {
         margin-right: 50px;
         margin-left: auto;
@@ -288,6 +328,10 @@
         top: 104px;
         right: 50px;
         color: #444444;
+    }
+
+    .additional-nav {
+        display: none;
     }
 }
 
@@ -397,5 +441,36 @@
     
     .header__text_delivery {
         right: 100px;
+    }
+
+    .page-header {
+        flex-wrap: wrap;
+    }
+    
+    .additional-nav {
+        display: block;
+    }
+
+    .additional-nav__list {
+        display: flex;
+        margin-left: 100px;
+        margin-top: 15px;
+    }
+
+    .additional-nav__item {
+        margin-right: 62px;
+    }
+
+    .additional-nav__link {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .additional-nav__link:hover {
+        color: #666666;
+    }
+
+    .additional-nav__link:active {
+        color: #b2b2b2;
     }
 }
