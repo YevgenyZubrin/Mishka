@@ -195,17 +195,21 @@
 }
 
 .main-features {
-    
+    background-image: url(../images/hero-mobile2.jpg);
+    background-position: top center;
+    background-position-y: -15px;
+    background-repeat: no-repeat;
+    // background-size: 100%;
 }
 
 .main-features__title {
     text-align: center;
     font-size: 27px;
     line-height: 30px;
-    margin-top: 70px;
-    margin-bottom: 115px;
-    margin-right: 38px;
-    margin-left: 38px;
+    padding-top: 70px;
+    padding-bottom: 115px;
+    padding-right: 38px;
+    padding-left: 38px;
 }
 
 .main-features__button {
@@ -367,6 +371,44 @@
 
     .additional-nav {
         display: none;
+    }
+
+
+    .main-features {
+        background-image: url(../images/hero-desktop.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+    
+    .main-features__title {
+        font-size: 43px;
+        line-height: 50px;
+        padding-top: 160px;
+        padding-bottom: 365px;
+    }
+    
+    .main-feature__button-container {
+        display: flex;
+
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .main-features__button {
+        width: 50%;
+    }
+    
+    .main-features__button {
+        background-color: #63d1bb;
+    }
+    
+    .main-features__button_dark {
+        background-color: #56c3b2;
+    }
+    
+    .features-button__text {
+        width: 50px;
+        margin: 30px 30px;
     }
 }
 
