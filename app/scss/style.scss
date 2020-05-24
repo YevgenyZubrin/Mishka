@@ -214,23 +214,68 @@
 
 .main-features__button {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: #ffffff;
     font-size: 19px;
     font-weight: 700;
     height: 103px;
-}
-
-.main-features__button {
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: #63d1bb;
 }
+
+
+// .main-features__button:hover {
+//     height: 103px;
+
+// }
 
 .main-features__button_dark {
     background-color: #56c3b2;
 }
 
 .features-button__text {
-    width: 50px;
-    margin: 30px 30px;
+    width: 150px;
+}
+
+.features-button__logo {
+    width: 75px;
+    height: 75px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.features-button__logo_lamp {
+    background-image: url(../images/lamp-icon.svg);
+}
+
+.features-button__logo_box {
+    background-image: url(../images/box-icon.svg);
+}
+
+.main-features__button:active .features-button__text {
+    opacity: 0.5;
+
+}
+
+.main-features__button:active .features-button__logo {
+    opacity: 0.3;
+
+}
+
+.main__product {
+    padding: 30px;
+    color: #444444;
+}
+
+.main-product__title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+
 }
 
 @media (min-width: 768px) {
@@ -390,8 +435,8 @@
     .main-feature__button-container {
         display: flex;
 
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .main-features__button {
@@ -406,10 +451,26 @@
         background-color: #56c3b2;
     }
     
-    .features-button__text {
-        width: 50px;
-        margin: 30px 30px;
+    .main-features__button {
+        height: 119px;
     }
+
+    .main-features__button:hover  {
+        height: 124px;
+        margin-top: -5px;
+    }
+
+    .main-features__button:active {
+        height: 119px;
+
+    }
+
+    .main-features__button:hover {
+        height: 124px;
+        margin-top: -5px;
+    }
+
+    
 }
 
 @media (min-width: 1250px) {
@@ -550,4 +611,20 @@
     .additional-nav__link:active {
         color: #b2b2b2;
     }
+
+    .main-feature__button-container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .main-features__button {
+        height: 119px;
+    }
+
+    .main-features__button:hover {
+        height: 124px;
+        margin-top: -5px;
+    }
+
 }
+
