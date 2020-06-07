@@ -308,7 +308,7 @@
     padding-left: 25px;
 }
 
-.main-product__image {
+.main-product__image_mobile {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
@@ -334,6 +334,29 @@
     color: #444444;
     border: 2px solid #444444;
 }
+
+.main-product__image {
+    display: none;
+}
+
+.main-product__containter {
+    position: relative;
+}
+
+.main-product__containter::after {
+    position: absolute;
+
+    content: "";
+    display: block;
+
+    height: 6px;
+    bottom: -30px;
+    left: -30px;
+    right: -30px;
+    background-image: url(../images/zigzag-line-desktop.svg);
+    background-size: contain;
+}
+
 
 @media (min-width: 768px) {
     .header__logo-container {
@@ -475,7 +498,6 @@
         display: none;
     }
 
-
     .main-features {
         background-image: url(../images/hero-desktop.jpg);
         background-position: top center;
@@ -490,10 +512,18 @@
     }
     
     .main-feature__button-container {
+        position: relative;
         display: flex;
 
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .main-feature__button-container::after {
+        height: 24px;
+        bottom: -10px;
+        left: 0px;
+        right: 0px;
     }
 
     .main-features__button {
@@ -519,7 +549,6 @@
 
     .main-features__button:active {
         height: 119px;
-
     }
 
     .main-features__button:hover {
@@ -532,80 +561,79 @@
     }
 
     .main__product {
-        position: relative;
         padding: 50px;
-        background-image: url(../images/zigzag-fill-desktop.svg);
-        background-position: top left;
-        background-repeat: no-repeat;
-        margin-top: -50px;
-        z-index: 100;
     }
-
-
-
 
     .main-product__title {
         font-size: 43px;
         line-height: 50px;
-       
-    
     }
     
+    .main-product__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 405px;
+        width: 43%;
+    }
+
+    .main-product__image_mobile {
+            display: none;
+        }
+
+    .main-product__image {
+        display: block;
+        height: 405px;
+    }
+
+    .main-product__containter {
+        position: relative;
+        display: flex;
+        justify-content: space-between;;
+    }
+
+    .main-product__containter::after {
+        position: absolute;
+
+        content: "";
+        display: block;
+
+        height: 17px;
+        bottom: -50px;
+        left: -50px;
+        right: -50px;
+        background-image: url(../images/zigzag-line-desktop.svg);
+        background-size: contain;
+    }
+
     .main-product__description {
-        line-height: 24px;
-        margin-bottom: 20px;
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 35px;
     }
     
     .main-product__table {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-    .product-table__string {
-        display: block;
-        border-bottom: 1px solid #ececec;
-    
-        line-height: 20px;
-    }
-    
-    .product-table__column {
-        padding: 7px 0;
-    }
-    
-    .product-table__column-1 {
-        width: 75px;
-    }
-    
-    .product-table__column-2 {
-        padding-left: 25px;
-    }
-    
-    .main-product__image {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 45px;
     }
     
     .product-table__price {
-        display: block;
-        text-align: center;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 24px;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
     
-    .product-table__order-button {
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 17px;
-        line-height: 20px;
-        font-weight: 700;
-        width: 100%;
-        padding: 15px 0;
-        color: #444444;
-        border: 2px solid #444444;
-    }
+    // .product-table__order-button {
+    //     display: block;
+    //     text-align: center;
+    //     text-transform: uppercase;
+    //     font-size: 17px;
+    //     line-height: 20px;
+    //     font-weight: 700;
+    //     width: 100%;
+    //     padding: 15px 0;
+    //     color: #444444;
+    //     border: 2px solid #444444;
+    // }
     
 
 
