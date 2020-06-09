@@ -520,10 +520,18 @@
     }
 
     .main-feature__button-container::after {
+        position: absolute;
+
+        content: "";
+        display: block;
+
         height: 24px;
         bottom: -10px;
         left: 0px;
         right: 0px;
+
+        background-image: url(../images/zigzag-fill-tablet.svg);
+        background-size: contain;
     }
 
     .main-features__button {
