@@ -565,4 +565,21 @@
     height: 119px; }
   .main-features__button:hover {
     height: 124px;
-    margin-top: -5px; } }
+    margin-top: -5px; }
+  .main-feature__button-container::after {
+    height: 34px;
+    bottom: -10px;
+    left: 0px;
+    right: 0px;
+    background-image: url(../images/zigzag-fill-desktop.svg);
+    background-size: contain; }
+  .main__product {
+    padding: 100px;
+    padding-left: 275px; }
+  .main-product__containter::after {
+    height: 23px;
+    bottom: -70px;
+    left: -175px;
+    right: 0px;
+    background-image: url(../images/zigzag-line-desktop.svg);
+    background-size: contain; } }

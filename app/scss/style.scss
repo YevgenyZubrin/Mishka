@@ -800,5 +800,118 @@
         margin-top: -5px;
     }
 
+
+
+
+
+
+
+    .main-feature__button-container::after {
+        height: 34px;
+        bottom: -10px;
+        left: 0px;
+        right: 0px;
+
+        background-image: url(../images/zigzag-fill-desktop.svg);
+        background-size: contain;
+    }
+
+    .main__product {
+        padding: 100px;
+        padding-left: 275px;
+    }
+
+    .main-product__containter::after {
+        height: 23px;
+        bottom: -70px;
+        left: -175px;
+        right: 0px;
+        background-image: url(../images/zigzag-line-desktop.svg);
+        background-size: contain;
+    }
+
+    // .main-features__button {
+    //     width: 50%;
+    // }
+    
+    // .main-features__button {
+    //     background-color: #63d1bb;
+    // }
+    
+    // .main-features__button_dark {
+    //     background-color: #56c3b2;
+    // }
+    
+    // .main-features__button {
+    //     height: 119px;
+    // }
+
+    // .main-features__button:hover  {
+    //     height: 124px;
+    //     margin-top: -5px;
+    // }
+
+    // .main-features__button:active {
+    //     height: 119px;
+    // }
+
+    // .main-features__button:hover {
+    //     height: 124px;
+    //     margin-top: -5px;
+    // }
+
+    // .main-product__wrapper {
+    //     width: 50%;
+    // }
+
+    
+
+    // .main-product__title {
+    //     font-size: 43px;
+    //     line-height: 50px;
+    // }
+    
+    // .main-product__wrapper {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    //     height: 405px;
+    //     width: 43%;
+    // }
+
+    // .main-product__image_mobile {
+    //         display: none;
+    //     }
+
+    // .main-product__image {
+    //     display: block;
+    //     height: 405px;
+    // }
+
+    // .main-product__containter {
+    //     position: relative;
+    //     display: flex;
+    //     justify-content: space-between;;
+    // }
+
+    
+
+    // .main-product__description {
+    //     line-height: 30px;
+    //     font-size: 17px;
+    //     margin-bottom: 35px;
+    // }
+    
+    // .main-product__table {
+    //     margin-bottom: 45px;
+    // }
+    
+    // .product-table__price {
+    //     font-size: 20px;
+    //     line-height: 24px;
+    //     margin-bottom: 35px;
+    // }
+
+
 }
 
