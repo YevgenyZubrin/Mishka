@@ -288,6 +288,48 @@
   background-image: url(../images/zigzag-line-desktop.svg);
   background-size: contain; }
 
+.main__about {
+  padding: 30px;
+  background-color: #fff; }
+
+.main-about__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 30px; }
+
+.main-about__item {
+  position: relative;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 30px; }
+
+.main-about__item::before {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 60px;
+  background-position: top center;
+  background-repeat: no-repeat; }
+
+.main-about__item_ecology::before {
+  background-image: url(../images/icon-1.svg); }
+
+.main-about__item_scandinavian::before {
+  background-image: url(../images/icon-2.svg); }
+
+.main-about__item_likes::before {
+  background-image: url(../images/icon-3.svg); }
+
+.main-about__item_knitted-manually::before {
+  background-image: url(../images/icon-4.svg); }
+
+.main-about__item_domestic-producer::before {
+  background-image: url(../images/icon-5.svg); }
+
+.main-about__item_gift-wrap::before {
+  background-image: url(../images/icon-6.svg); }
+
 @media (min-width: 768px) {
   .header__logo-container {
     position: absolute;
@@ -397,6 +439,8 @@
   .main-feature__button-container {
     position: relative;
     display: flex;
+    max-width: 1050px;
+    margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px; }
   .main-feature__button-container::after {
@@ -465,7 +509,27 @@
   .product-table__price {
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+  .main__about {
+    padding: 50px;
+    background-color: #fff; }
+  .main-about__list-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .main-about__list {
+    width: 334px; }
+  .main-about__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px; }
+  .main-about__item {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 55px; }
+  .main-about__item::before {
+    height: 60px; } }
 
 @media (min-width: 1250px) {
   .page {
@@ -561,6 +625,8 @@
   .additional-nav__link:active {
     color: #b2b2b2; }
   .main-feature__button-container {
+    width: 1050px;
+    margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
     background-color: #f9f9f9; }
@@ -581,6 +647,7 @@
     padding: 0;
     padding-top: 100px;
     margin: 0 100px;
+    margin-bottom: 130px;
     background-image: url(../images/triple-set-desktop.jpg);
     background-position: bottom right;
     background-size: 525px;
@@ -617,4 +684,23 @@
     margin-bottom: 60px;
     max-width: 390px; }
   .main-product__table {
-    margin-bottom: 105px; } }
+    margin-bottom: 105px; }
+  .main__about {
+    padding: 0 100px;
+    padding-left: 275px;
+    background-color: #fff; }
+  .main-about__list-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .main-about__list {
+    width: 334px; }
+  .main-about__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 50px; }
+  .main-about__item {
+    margin-bottom: 55px; }
+  .main-about__item::before {
+    height: 60px; } }
