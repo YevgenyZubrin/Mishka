@@ -12,54 +12,62 @@
 
 <body>
     <header class="page-header">
-        <div class="header__logo-container">
-            <a class="header__logo logo link" href=""></a>
+        <div class="page-header__container">
+            <div class="header__logo-container">
+                <a class="header__logo logo link" href=""></a>
+            </div>
+            <nav class="header__nav main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item_catalog item">
+                        <a href="" class="main-nav__link main-nav__link_catalog link">
+                            <span class="main-nav__text">Каталог товаров</span>
+                        </a>
+                    </li>
+                    <li class="main-nav__item main-nav__item_knitting item">
+                        <a href="" class="main-nav__link main-nav__link_knitting link">
+                            <span class="main-nav__text main-nav__text_knitting">Вязание на заказ</span>
+                        </a>
+                    </li>
+                    <li class="main-nav__item main-nav__item_search item">
+                        <a href="" class="main-nav__link main-nav__link_search link">
+                            <span class="main-nav__text main-nav__text_search main-nav__link_invisable">Поиск по сайту</span>
+                        </a>
+                    </li>
+                    <li class="main-nav__item main-nav__item_cart item">
+                        <a href="" class="main-nav__link main-nav__link_cart link">
+                            <span class="main-nav__text main-nav__text_cart">Корзина: пока пуста</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header__nav main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item_catalog item">
-                    <a href="" class="main-nav__link main-nav__link_catalog link">
-                        <span class="main-nav__text">Каталог товаров</span>
-                    </a>
-                </li>
-                <li class="main-nav__item main-nav__item_knitting item">
-                    <a href="" class="main-nav__link main-nav__link_knitting link">
-                        <span class="main-nav__text main-nav__text_knitting">Вязание на заказ</span>
-                    </a>
-                </li>
-                <li class="main-nav__item main-nav__item_search item">
-                    <a href="" class="main-nav__link main-nav__link_search link">
-                        <span class="main-nav__text main-nav__text_search main-nav__link_invisable">Поиск по сайту</span>
-                    </a>
-                </li>
-                <li class="main-nav__item main-nav__item_cart item">
-                    <a href="" class="main-nav__link main-nav__link_cart link">
-                        <span class="main-nav__text main-nav__text_cart">Корзина: пока пуста</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
 
-        <nav class="header__nav additional-nav">
-            <ul class="additional-nav__list">
-                <li class="additional-nav__item item">
-                    <a class="additional-nav__link link" href="">
-                        Новые поступления
-                    </a>
-                </li>
-                <li class="additional-nav__item item">
-                    <a class="additional-nav__link link" href="">
-                        Распродажа
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="page-header__container page-header__container_grey">
+            <nav class="header__nav header__nav_flex additional-nav">
+                <ul class="additional-nav__list">
+                    <li class="additional-nav__item item">
+                        <a class="additional-nav__link link" href="">
+                            Новые поступления
+                        </a>
+                    </li>
+                    <li class="additional-nav__item item">
+                        <a class="additional-nav__link link" href="">
+                            Распродажа
+                        </a>
+                    </li>
+                </ul>
 
+                <span class="header__text_delivery">Бесплатная доставка по России</span>
+
+            </nav>
+
+        </div>
+        
         <button class="header__button-menu header__button-menu_on"></button>
 
         <button class="header__button-close"></button>
 
-        <span class="header__text_delivery">Бесплатная доставка по России</span>
+        <!-- <span class="header__text_delivery">Бесплатная доставка по России</span> -->
     </header>
 
     <main class="page-main">

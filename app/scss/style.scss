@@ -20,6 +20,10 @@
 }
 
 .page-header {
+    width: 100%;
+}
+
+.page-header__container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -441,9 +445,13 @@
     }
 
     .page-header {
-        flex-direction: row;
     }
 
+    .page-header__container {
+        flex-direction: row;
+
+    }
+    
     .main-nav__text {
         width: max-content;
     }
@@ -539,10 +547,10 @@
     }
 
     .header__text_delivery {
-        position: absolute;
+        // position: absolute;
         display: block;
-        top: 104px;
-        right: 50px;
+        // top: 104px;
+        // right: 50px;
         color: #444444;
     }
 
@@ -568,7 +576,7 @@
     .main-feature__button-container {
         position: relative;
         display: flex;
-        max-width: 1050px;
+        // max-width: 1050px;
         margin: 0 auto;
         padding-left: 50px;
         padding-right: 50px;
@@ -591,6 +599,9 @@
 
     .main-features__button {
         width: 50%;
+        height: 119px;
+
+        // max-width: 525px;
     }
     
     .main-features__button {
@@ -601,10 +612,6 @@
         background-color: #56c3b2;
     }
     
-    .main-features__button {
-        height: 119px;
-    }
-
     .main-features__button:hover  {
         height: 124px;
         margin-top: -5px;
@@ -843,13 +850,25 @@
     }
     
     .header__text_delivery {
-        right: 100px;
+        margin-right: 100px;
+        margin-top: 15px;
     }
 
     .page-header {
-        flex-wrap: wrap;
+       
     }
     
+    .page-header__container {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .page-header__container_grey {
+        background-color: #f9f9f9;
+        
+    }
+
     .additional-nav {
         display: block;
     }
@@ -878,8 +897,7 @@
     }
 
     .main-feature__button-container {
-        width: 1050px;
-        margin: 0 auto;
+        justify-content: center;
         padding-left: 100px;
         padding-right: 100px;
         background-color: #f9f9f9;
@@ -887,18 +905,13 @@
 
     .main-features__button {
         height: 119px;
+        max-width: 465px;
     }
 
     .main-features__button:hover {
         height: 124px;
         margin-top: -5px;
     }
-
-
-
-
-
-
 
     .main-feature__button-container::after {
         height: 34px;
@@ -912,16 +925,15 @@
 
     .main__product {
         position: relative;
+        width: 1050px;
         padding: 0;
         padding-top: 100px;
-        margin: 0 100px;
+        margin: 0 auto;
         margin-bottom: 130px;
         background-image: url(../images/triple-set-desktop.jpg);
         background-position: bottom right;
         background-size: 525px;
         background-repeat: no-repeat;
-
-        // padding-left: 275px;
     }
 
     .main-product__containter::after {
@@ -934,46 +946,21 @@
     }
 
     .header__nav {
+        max-width: 1250px;
+        margin: 0 auto;
         background-color: #f9f9f9;
     }
 
-    // .main-features__button {
-    //     width: 50%;
-    // }
-    
-    // .main-features__button {
-    //     background-color: #63d1bb;
-    // }
-    
-    // .main-features__button_dark {
-    //     background-color: #56c3b2;
-    // }
-    
-    // .main-features__button {
-    //     height: 119px;
-    // }
-
-    // .main-features__button:hover  {
-    //     height: 124px;
-    //     margin-top: -5px;
-    // }
-
-    // .main-features__button:active {
-    //     height: 119px;
-    // }
-
-    // .main-features__button:hover {
-    //     height: 124px;
-    //     margin-top: -5px;
-    // }
+    .header__nav_flex {
+        display: flex;
+        justify-content: space-between;
+    }
 
     .main-product__wrapper {
         width: 28%;
         margin-left: 175px;
         height: 100%;
     }
-
-    
 
     .main-product__title {
         
@@ -982,14 +969,6 @@
         line-height: 57px;
     }
     
-    // .main-product__wrapper {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: space-between;
-    //     height: 405px;
-    //     width: 43%;
-    // }
-
     .main-product__image_mobile {
             display: none;
         }
@@ -1001,15 +980,12 @@
         display: none;
         width: 50%;
         
-        // z-index: 0;
         height: 100%;
     }
 
     .main-product__containter {
         position: unset;
     }
-
-    
 
     .main-product__description {
         margin-bottom: 60px;
@@ -1019,42 +995,35 @@
     .main-product__table {
         margin-bottom: 105px;
     }
-    
-    // .product-table__price {
-    //     font-size: 20px;
-    //     line-height: 24px;
-    //     margin-bottom: 35px;
-    // }
 
     .main__about {
-        
-        padding: 0 100px;
-        padding-left: 275px;
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 0;
+        // padding-left: 275px;
         background-color: #fff;
     }
 
     .main-about__list-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        width: auto;
+        justify-content: start;
+        margin-left: 175px;
     }
 
     .main-about__list {
-        width: 334px;
-        
+        width: 305px;
+        margin-right: 115px;
     }
     
     .main-about__title {
         font-size: 53px;
         line-height: 57px;
         margin-bottom: 50px;
+        margin-left: 175px;
     }
     
     .main-about__item {
-        
         margin-bottom: 55px;
-        // width: 334px;
     }
     
     .main-about__item::before {
