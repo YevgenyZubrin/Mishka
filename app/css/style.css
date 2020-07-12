@@ -19,7 +19,6 @@
   width: 100%; }
 
 .page-header__container {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -333,6 +332,76 @@
 .main-about__item_gift-wrap::before {
   background-image: url(../images/icon-6.svg); }
 
+.main-feedback {
+  background-color: #fff; }
+
+.main-feedback::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-image: url(../images/zigzag-line-desktop.svg);
+  background-size: contain; }
+
+.main-feedback__container {
+  padding: 0 30px;
+  padding-bottom: 30px; }
+
+.main-feedback__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 25px; }
+
+.main-feedback__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  margin-bottom: 30px; }
+
+.main-feedback__author {
+  margin-bottom: 30px; }
+
+.main-feedback__author {
+  font-size: 17px; }
+
+.author__name {
+  font-weight: 700;
+  line-height: 30px; }
+
+.author__insta {
+  color: #444444;
+  line-height: 30px; }
+
+.main-feedback__button-wrapper {
+  display: flex;
+  margin-bottom: 35px; }
+
+.main-feedback__button {
+  width: 50%;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.main-feedback__button_back {
+  border-right: none;
+  background-image: url(../images/huge-arrow-left.svg); }
+
+.main-feedback__button_forward {
+  background-image: url(../images/huge-arrow-right.svg); }
+
+.main-feedback__button_wright {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 0;
+  border: 2px solid #444444;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444444; }
+
 @media (min-width: 768px) {
   .header__logo-container {
     position: absolute;
@@ -356,7 +425,12 @@
   .header__nav {
     display: flex; }
   .page-header__container {
-    flex-direction: row; }
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+  .page-header__container_grey {
+    background-color: #f9f9f9; }
   .main-nav__text {
     width: max-content; }
   .main-nav__list {
@@ -422,10 +496,14 @@
   .main-nav__link_invisable {
     display: none; }
   .header__text_delivery {
+    position: absolute;
     display: block;
-    color: #444444; }
+    top: -24px;
+    right: 50px;
+    color: #444444;
+    visibility: visible; }
   .additional-nav {
-    display: none; }
+    visibility: hidden; }
   .main-features {
     background-image: url(../images/hero-desktop.jpg);
     background-position: top center;
@@ -604,16 +682,11 @@
   .main-nav__list {
     flex-wrap: nowrap; }
   .header__text_delivery {
+    position: unset;
     margin-right: 100px;
     margin-top: 15px; }
-  .page-header__container {
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 0 auto; }
-  .page-header__container_grey {
-    background-color: #f9f9f9; }
   .additional-nav {
-    display: block; }
+    visibility: visible; }
   .additional-nav__list {
     display: flex;
     margin-left: 100px;
@@ -705,7 +778,7 @@
     margin-left: 175px; }
   .main-about__list {
     width: 305px;
-    margin-right: 115px; }
+    margin-right: 45px; }
   .main-about__title {
     font-size: 53px;
     line-height: 57px;
