@@ -1151,5 +1151,77 @@
     .main-about__item::before {
         height: 60px;
     }
+
+
+    // .main-feedback {
+    //     background-color: #fff;
+    // }
+    
+    .main-feedback::after {
+        max-width: 1050px;
+        height: 23px;
+        margin: 0 auto;
+        background-image: url(../images/zigzag-line-desktop.svg);
+    }
+    
+    .main-feedback__container {
+        box-sizing: border-box;
+        max-width: 1050px;
+        padding-left: 175px;
+        padding-right: 0px;
+        padding-bottom: 100px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    
+    .main-feedback__title {
+        font-size: 53px;
+        line-height: 57px;
+    }
+    
+    .main-feedback__text {
+        margin-bottom: 45px;
+    }
+    
+    // .main-feedback__author {
+    //     display: flex;
+    //     flex-direction: column;
+    //     margin: 0;
+    // }
+    
+    .main-feedback__author {
+        font-size: 17px;
+    }
+    
+    // .author__name {
+    //     line-height: 24px;
+    // }
+    
+    // .author__insta {
+    //     font-size: 17px;
+    //     line-height: 30px;
+    // }
+    
+    // .main-feedback__wrapper {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+
+    // .main-feedback__button-wrapper {
+    //     margin: 0;
+    // }
+
+    // .main-feedback__button {
+    //     width: 88px;
+    //     height: 50px;
+    //     border: none;
+    // }
+    
+    .main-feedback__button_wright {
+        right: 0;
+    }
+
+
+
 }
 

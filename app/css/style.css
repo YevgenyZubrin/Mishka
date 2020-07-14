@@ -836,4 +836,26 @@
   .main-about__item {
     margin-bottom: 55px; }
   .main-about__item::before {
-    height: 60px; } }
+    height: 60px; }
+  .main-feedback::after {
+    max-width: 1050px;
+    height: 23px;
+    margin: 0 auto;
+    background-image: url(../images/zigzag-line-desktop.svg); }
+  .main-feedback__container {
+    box-sizing: border-box;
+    max-width: 1050px;
+    padding-left: 175px;
+    padding-right: 0px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    margin-bottom: 60px; }
+  .main-feedback__title {
+    font-size: 53px;
+    line-height: 57px; }
+  .main-feedback__text {
+    margin-bottom: 45px; }
+  .main-feedback__author {
+    font-size: 17px; }
+  .main-feedback__button_wright {
+    right: 0; } }
