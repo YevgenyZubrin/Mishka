@@ -605,7 +605,56 @@
     line-height: 22px;
     margin-bottom: 55px; }
   .main-about__item::before {
-    height: 60px; } }
+    height: 60px; }
+  .main-feedback {
+    background-color: #fff; }
+  .main-feedback::after {
+    height: 17px;
+    background-image: url(../images/zigzag-line-desktop.svg);
+    background-size: contain; }
+  .main-feedback__container {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 70px;
+    background-image: url(../images/review.jpg);
+    background-position: top left;
+    background-repeat: no-repeat; }
+  .main-feedback__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 55px; }
+  .main-feedback__text {
+    font-size: 17px;
+    margin-bottom: 60px; }
+  .main-feedback__author {
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
+  .main-feedback__author {
+    font-size: 18px; }
+  .author__name {
+    line-height: 24px; }
+  .author__insta {
+    font-size: 17px;
+    line-height: 30px; }
+  .main-feedback__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .main-feedback__button-wrapper {
+    margin: 0; }
+  .main-feedback__button {
+    width: 88px;
+    height: 50px;
+    border: none; }
+  .main-feedback__button_wright {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 175px;
+    height: 50px;
+    font-size: 17px; } }
 
 @media (min-width: 1250px) {
   .page {
