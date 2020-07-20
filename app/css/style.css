@@ -345,7 +345,7 @@
 
 .main-feedback__container {
   padding: 0 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 55px; }
 
 .main-feedback__title {
   font-size: 25px;
@@ -377,6 +377,7 @@
   margin-bottom: 35px; }
 
 .main-feedback__button {
+  cursor: pointer;
   width: 50%;
   height: 50px;
   background-color: #fff;
@@ -392,6 +393,7 @@
   background-image: url(../images/huge-arrow-right.svg); }
 
 .main-feedback__button_wright {
+  cursor: pointer;
   width: 100%;
   height: 50px;
   background-color: #fff;
@@ -401,6 +403,50 @@
   text-transform: uppercase;
   font-weight: 700;
   color: #444444; }
+
+.main-contacts {
+  background-color: #fff; }
+
+.main-contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px; }
+
+.main-contacts__wrapper {
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px; }
+
+.main-contacts__map {
+  height: 460px; }
+
+.main-contacts__paragraph {
+  display: flex;
+  color: #444444;
+  font-size: 15px;
+  line-height: 30px; }
+
+.main-contacts__paragraph_margin {
+  margin-bottom: 35px; }
+
+.main-contacts__link {
+  border-bottom: 1px solid #62d1ba;
+  color: #444444; }
+
+.main-contacts__text_small {
+  width: 50px;
+  margin-right: 30px; }
+
+.main-contacts__button {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 @media (min-width: 768px) {
   .header__logo-container {
