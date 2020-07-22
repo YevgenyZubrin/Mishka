@@ -488,6 +488,8 @@
     color: #444444;
 }
 
+/////////////////Contacts block///////////////////////////////
+
 .main-contacts {
     background-color: #fff;
 }
@@ -1301,6 +1303,53 @@
         right: 0;
     }
 
+/////////////////Contacts block///////////////////////////////
+
+.main-contacts__container {
+    position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 105px;
+}
+
+.main-contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+}
+
+.main-contacts__title::after {
+    left: -107px;
+}
+
+.main-contacts__wrapper {
+    box-sizing: border-box;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-left: 175px;
+}
+
+.main-contacts__paragraph-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-contacts__wrapper_button {
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.main-contacts__map {
+    position: absolute;
+    width: 525px;
+    top: 70px;
+    right: 0;
+}
+
+.main-contacts__paragraph_margin {
+    margin-bottom: 35px;
+}
 
 
 }
