@@ -939,9 +939,24 @@
 /////////////////Contacts block///////////////////////////////
 
 .main-contacts__title {
+    position: relative;
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 60px;
+}
+
+.main-contacts__title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    right: 0;
+    display: block;
+    width: 47px;
+    height: 81px;
+    background-image: url(../images/flag.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .main-contacts__wrapper {
