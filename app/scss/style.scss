@@ -936,7 +936,45 @@
         font-size: 17px;
     }
 
+/////////////////Contacts block///////////////////////////////
 
+.main-contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+
+.main-contacts__wrapper {
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+}
+
+.main-contacts__paragraph-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-contacts__paragraph {
+    width: 50%;
+}
+
+.main-contacts__paragraph_margin {
+    margin-bottom: 0;
+}
+
+.main-contacts__wrapper_button {
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.main-contacts__button {
+    width: 230px;
+}
+
+    
 
 }
 
